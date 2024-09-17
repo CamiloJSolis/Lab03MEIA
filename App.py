@@ -32,7 +32,7 @@ class MainUI(QMainWindow):
 
             book_data = book_form.get_book_data()
 
-            save_file, _ = QFileDialog.getSaveFileName(self, "Guardar Archivo", "/home", "")
+            save_file, _ = QFileDialog.getSaveFileName(self, "Guardar Archivo", "", "")
             if save_file:
                 save_file_path = save_file
                 try:
@@ -42,8 +42,6 @@ class MainUI(QMainWindow):
                                 loaded_data = pickle.load(f)
                                 if isinstance(loaded_data, list):
                                     self.data = [loaded_data]
-                                # elif isinstance(loaded_data, list):
-                                #     self.data = loaded_data
                                 else:
                                     self.data = []
                             except EOFError:
