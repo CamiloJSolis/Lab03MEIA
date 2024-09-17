@@ -1,9 +1,4 @@
-import os.path
-import pickle
-import sys
-from PyQt6.QtWidgets import (QWidget, QGridLayout, QLineEdit, QPushButton, QFormLayout,
-                             QPlainTextEdit, QFileDialog, QApplication, QMessageBox, QTreeView, QMainWindow, QComboBox,
-                             QDialog)
+from PyQt6.QtWidgets import (QLineEdit, QPushButton, QMessageBox, QComboBox, QDialog)
 from PyQt6.uic import loadUi
 
 
